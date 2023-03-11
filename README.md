@@ -11,3 +11,8 @@ Similarly, android has made it mandatory that the toast tag must have the attrib
 get the text during automation using `String errorMessage=driver.findElement(AppiumBy.xpath("(//android.widget.Toast)[1]")).getAttribute("name")`
 or simply `String errorMessage=driver.findElement(AppiumBy.xpath("(//android.widget.Toast)[1]")).getText()`
 Now we can use the text gotten from the toast to perform assertion
+
+
+findElements() this is used when there are multiple elements with the same attributes. We have to use driver.findElements(selector) to get all the available items and we can get the size and later loop though the list of the items to get the specific item we need
+
+To use explicit wait: We have to visit mvnrepository and earch for selenium support, copy the maven scripts and paste in your pom.xml

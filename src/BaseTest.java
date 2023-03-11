@@ -68,6 +68,10 @@ public class BaseTest { //this is a class
 		));
 	}
 	
+	public Double getFormattedAmount(String amount) {
+		double formatted = Double.parseDouble(amount.substring(1));
+		return formatted;
+	}
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
